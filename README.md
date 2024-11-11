@@ -1,5 +1,5 @@
 # Arduino Seven Segment Timer
-The Arduino Seven Segment Timer project is a simple and efficient countdown timer built using an Arduino and a seven-segment display. It allows users to set a time interval, and the timer visually counts down to zero, making it ideal for various applications like cooking timers, study timers, or any situation where time tracking is needed.
+The Arduino Seven Segment Timer project is a simple and efficient countdown timer built using an Arduino and a seven-segment display. It allows users to set a time interval, and the timer visually counts down to zero, making it ideal for various applications like cooking timers, study timers, or any situation where time tracking is needed. [interactive electronic circuit](https://wokwi.com/projects/400427859019710465)
 
 # Key Features
 - Customizable Time Intervals: Set time for countdown based on user input.
@@ -9,5 +9,3 @@ The Arduino Seven Segment Timer project is a simple and efficient countdown time
 # Future Development
 - Sound Alerts: Add buzzer for time-up notifications.
 - Multiple Timer Presets: Enable users to store and select different countdown presets.
-
-https://wokwi.com/projects/400427859019710465
