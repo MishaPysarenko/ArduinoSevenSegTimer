@@ -45,6 +45,7 @@ Task task6(500, TASK_FOREVER , &changeMode);
 #define TIME 5
 
 volatile uint16_t timer = 100;
+volatile uint32_t debounce;
 volatile uint16_t tempTime;
 volatile bool timerRunning = false, chekStop = false;
 volatile bool mode = 0, exitFlag = false;
@@ -116,7 +117,7 @@ void setup() {
   if(timer > 999 || timer < 1){
     timer = 60;
   }
-
+  millis() = debounce;
   for (int i = 0; i < 100; i++) {
     printSNP();
   }
@@ -137,7 +138,13 @@ void loop() {
 }
 
 void toggleTimer() {
-  timerRunning = !timerRunning;
+    Serial.println("toggleTimer");
+  if(millis() - debounce >= 100 && (!digitalRead(StartStop)))
+  {
+    debounce = millis(); 
+    timerRunning = !timerRunning;
+    Serial.println(timerRunning);
+  }
 }
 
 void startTimer() {
